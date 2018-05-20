@@ -1,0 +1,15 @@
+<!--pages/main/main.wxml-->
+<view class='view_main'>
+  <image class='image_state' src='../../images/cat.png'></image> 
+  <!--状态描述  -->
+  <view class='view_state'>
+    <text class='text_state'>豆豆3岁啦</text>
+  </view>
+  <!--底部按钮栏  -->
+  <view class='view_endbar'>
+    <text class='btn' catchtap='log_task'>任务记录</text>
+    <text class='btn' catchtap='log_game'>游戏记录</text>
+    <text class='btn' catchtap='make_task'>任务定制</text>
+  </view> 
+</view>
+

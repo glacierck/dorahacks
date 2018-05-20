@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/make_task/make_task",
+    "pages/data/child",
+    "pages/data/pet",
+    "pages/log_game/log_game",
+    "pages/log_task/log_task"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFB5C5",
+    "navigationBarTitleText": "云宠",
+    "navigationBarTextStyle": "white"
+  }
+}

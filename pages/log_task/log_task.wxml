@@ -1,0 +1,4 @@
+<!--pages/log_task/log_task.wxml-->
+<view class="container">
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
+</view>

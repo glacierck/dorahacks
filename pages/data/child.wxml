@@ -1,0 +1,30 @@
+<!--pages/data/child.wxml-->
+<view class='main' style=" background-image:url(../../images/login_back.png); background-size: cover;">
+<view class="wx-view_login" >
+  <view class="view_logup_form">
+    <view class="wx-view_log_item" >
+        <text class="c-block wx-text_logup" >孩子的名字：</text>
+        <input class="c-block c-fullwidth wx_input" style="margin-left:6rpx; {{warn.warn_name}}" type="text" placeholder="小明" bindinput="getChildName"/>
+    </view>
+    <view class="wx-view_log_item">
+      <text class="c-block wx-text_logup" >年龄：</text>
+      <input class="c-block c-fullwidth wx_input" style="margin-left:6rpx; {{warn.warn_passwordSure}}" placeholder="5岁" type="text" maxlength="14" bindinput="getAge"/>
+    </view>
+    <view class="wx-view_log_item">
+      <text class="c-block wx-text_logup" >性别：</text>
+      <input class="c-block c-fullwidth wx_input" style="margin-left:6rpx; {{warn.warn_passwordSure}}" placeholder="男/女" type="text" maxlength="14" bindinput="getSex"/>
+    </view>
+    <view class="wx-view_log_item" >
+      <text class="c-block wx-text_logup" >年纪：</text>
+      <input class="c-block c-fullwidth wx_input" style="margin-left:6rpx; {{warn.warn_passwordSure}}" placeholder="大班" type="text" maxlength="14" bindinput="getGrade"/>
+    </view>
+    <view class="wx-view_log_item" style="border-bottom-style: none;">
+      <text class="c-block wx-text_logup" >爱好：</text>
+      <input class="c-block c-fullwidth wx_input" style="margin-left:6rpx; {{warn.warn_passwordSure}}" placeholder="唱歌，跳舞，画画等" type="text" maxlength="100" bindinput="getInt"/>
+    </view>
+  </view>    
+  <button class="wx-button_logup"  catchtap="tap_next" hover-class="button-hover" size="default" type="warn">
+            下一步
+  </button>
+</view>
+</view>

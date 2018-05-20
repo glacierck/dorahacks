@@ -1,0 +1,22 @@
+<!--pages/data/pet.wxml-->
+<view class='main' style=" background-image:url(../../images/login_back.png); background-size: cover;">
+<view class="wx-view_login">
+  <view class="view_logup_form">
+    <view class="wx-view_log_item" >
+        <text class="c-block wx-text_logup" >宠物的名字：</text>
+        <input class="c-block c-fullwidth wx_input" style="margin-left:6rpx; {{warn.warn_name}}" type="text" placeholder="豆豆" bindinput="getPetName"/>
+    </view>
+    <view class="wx-view_log_item">
+      <text class="c-block wx-text_logup" >类别：</text>
+      <input class="c-block c-fullwidth wx_input" style="margin-left:6rpx; {{warn.warn_passwordSure}}" placeholder="猫咪/小狗/小金鱼" type="text" maxlength="100" bindinput="getcate"/>
+    </view>
+    <view class="wx-view_log_item" style="border-bottom-style: none;">
+      <text class="c-block wx-text_logup" >性别：</text>
+      <input class="c-block c-fullwidth wx_input" style="margin-left:6rpx; {{warn.warn_passwordSure}}" placeholder="雌/雄" type="text" maxlength="14" bindinput="getPetSex"/>
+    </view>
+  </view>    
+  <button class="wx-button_logup"  catchtap="tap_done" hover-class="button-hover" size="default" type="warn">
+            完成
+  </button>
+</view>
+</view>

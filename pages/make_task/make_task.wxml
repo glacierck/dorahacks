@@ -1,0 +1,29 @@
+<view class='main' style=" background-image:url(../../images/login_back.png); background-size: cover;">
+<view class="wx-view_login" >
+  <view class="view_logup_form">
+    <view class="wx-view_log_item" >
+        <text class="c-block wx-text_logup" >任务名称：</text>
+        <input class="c-block c-fullwidth wx_input" style="margin-left:6rpx; {{warn.warn_name}}" type="text" placeholder="练琴" bindinput="getTaskName"/>
+    </view>
+    <view class="wx-view_log_item">
+      <text class="c-block wx-text_logup" >提醒时间：</text>
+      <picker  type="time"></picker>
+      <picker class="c-block c-fullwidth wx_input" style="margin-left:6rpx; {{warn.warn_passwordSure}}" mode="time" value="{{time}}" start="00:00" end="24:00" bindchange="listenerTimePickerSelected">
+    <text>{{time}}</text>
+      </picker>
+
+    </view>
+    <view class="wx-view_log_item" style="border-bottom-style: none;">
+      <text class="c-block wx-text_logup" >重复频率：</text>
+      <picker class="c-block c-fullwidth wx_input" style="margin-left:6rpx; {{warn.warn_passwordSure}}" mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+          {{multiArray[0][multiIndex[0]]}} {{multiArray[1][multiIndex[1]]}}
+        </view>
+      </picker>
+    </view>
+  </view>    
+  <button class="wx-button_logup"  catchtap="task_done" hover-class="button-hover" size="default" type="warn">
+            完成
+  </button>
+</view>
+</view>
